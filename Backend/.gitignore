@@ -1,17 +1,21 @@
-# Node.js dependencies
+# Node modules folder (don't commit dependencies)
 node_modules/
 
-# Environment variables
+# Environment variables file
 .env
 
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 
 # OS files
 .DS_Store
 
-# Build folders (if any)
+# Optional: build output folder if you use any build system
 dist/
 build/
+
+# Optional: Debugger files
+.vscode/
+.idea/
