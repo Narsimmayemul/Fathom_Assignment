@@ -1,0 +1,7 @@
+# Main project
+.env
+node_modules/
+
+# Backend subfolder (if applicable)
+Backend/.env
+Backend/node_modules/
