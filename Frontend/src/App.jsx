@@ -28,11 +28,11 @@ function App() {
         <Route
           path="/"
           element={
-            isAuthenticated ? (
-              <Navigate to="/dashboard" />
-            ) : (
-              <Login authVerify={authVerify} />
-            )
+            // isAuthenticated ? (
+            //   <Navigate to="/dashboard" />
+            // ) : (
+            <Login authVerify={authVerify} />
+            // )
           }
         />
         <Route path="/admin" element={<Dashboard />} />

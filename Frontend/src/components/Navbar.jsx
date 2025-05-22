@@ -9,9 +9,9 @@ const Navbar = () => {
   // }
 
   const handleLogout = () => {
+    navigate("/");
     localStorage.clear();
     window.location.reload();
-    navigate("/");
   };
 
   return (
