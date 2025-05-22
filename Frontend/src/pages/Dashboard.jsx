@@ -3,20 +3,22 @@ import Navbar from "../components/Navbar";
 import ShipSearch from "../components/ShipSearch";
 import { toast } from "react-toastify";
 import { useEffect } from "react";
+import ship from "../assets/ship1.jpg";
+
 
 const Dashboard = () => {
   const user = JSON.parse(localStorage.getItem("user"));
 
 
-   useEffect(() => {
+  useEffect(() => {
     toast.success("Welcome, " + user?.name);
   }, []);
 
   return (
-    <div>
+    <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${ship})` }}>
       <Navbar />
       <div className="p-6">
-        <h2 className="text-2xl font-semibold">Welcome, {user?.name}</h2>
+        <h2 className="text-2xl font-semibold ">Welcome, {user?.name}</h2>
         
         {/* Dummy Marine Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">

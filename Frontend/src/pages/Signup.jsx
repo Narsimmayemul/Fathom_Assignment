@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import ship from "../assets/ship1.jpg";
 
 const Signup = ({authVerify}) => {
   const [email, setEmail] = useState("");
@@ -30,8 +31,8 @@ const Signup = ({authVerify}) => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-blue-100">
-      <div className="bg-white p-8 rounded-lg shadow-md w-96">
+    <div  className="flex items-center bg-cover bg-center justify-center min-h-screen bg-blue-100" style={{ backgroundImage: `url(${ship})`}}>
+      <div className="bg-gray-100 p-8 rounded-lg shadow-md w-96" >
         <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
         <input
           type="text"
@@ -56,7 +57,7 @@ const Signup = ({authVerify}) => {
         />
         <button
           onClick={handleSignup}
-          className="w-full bg-blue-600 text-white p-2 rounded"
+          className="w-full bg-blue-600 text-white p-2 rounded cursor-pointer"
         >
           Sign Up
         </button>
