@@ -34,8 +34,8 @@ const ShipSearch = () => {
   const handleSearch = async () => {
   let URL =
     name.trim() === ""
-      ? `http://localhost:5000/api/ships/All`
-      : `http://localhost:5000/api/ships?name=${name}`;
+      ? `https://fathom-assignment-2zp4.vercel.app/api/ships/All`
+      : `https://fathom-assignment-2zp4.vercel.app/api/ships?name=${name}`;
 
   try {
     setLoading(true);

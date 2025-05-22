@@ -12,7 +12,7 @@ const Signup = ({authVerify}) => {
 
   const handleSignup = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", {
+      const res = await axios.post("https://fathom-assignment-2zp4.vercel.app/api/auth/signup", {
         email,
         password,
         name,

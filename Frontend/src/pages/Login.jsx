@@ -11,7 +11,7 @@ const Login = ({authVerify}) => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signin", {
+      const res = await axios.post("https://fathom-assignment-2zp4.vercel.app/api/auth/signin", {
         email,
         password,
       });
