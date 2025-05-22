@@ -23,7 +23,7 @@ const Signup = ({authVerify}) => {
       // alert("Signup successful!");
       toast.success("Signup successful!");
       authVerify(true);
-      navigate("/");
+      navigate("/dashboard");
     } catch (err) {
       toast.error(err.response.data.message);
       // alert(err.response.data.message);
